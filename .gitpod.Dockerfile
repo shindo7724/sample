@@ -4,6 +4,9 @@ FROM python:3.9-slim-buster
 # 作業ディレクトリを作成
 WORKDIR /app
 
+RUN sudo apt-get update
+RUN sudo apt-get install git
+
 # requirements.txtから依存パッケージをインストール
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
