@@ -5,7 +5,7 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 
 RUN apt update -y && apt upgrade -y
-RUN apt install git
+RUN apt install -y git
 
 # requirements.txtから依存パッケージをインストール
 COPY requirements.txt requirements.txt
