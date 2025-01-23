@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+    - name: jupyterlab
+      port: 8888
+      onOpen: open-browser
+    - name: streamlit
+      port: 8501
+      onOpen: open-browser
